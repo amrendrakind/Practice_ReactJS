@@ -3,7 +3,7 @@ class Footer extends Component{
     render(){
         return(
             <div className="footer">
-                <h3>it is space for footer</h3>
+                <h3>This is space for footer</h3>
             </div>
         )
     }
