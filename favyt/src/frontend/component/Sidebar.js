@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class Sidebar extends Component {
     render() {
         return (
-            <div className="side">
+            <div className="sidebar">
                 <h2>Arcu bibendum</h2>
                 <h5>Sit amet mattis vulputate</h5>
                 <div className="fakeimg" style={{ height: 200 }}>Image</div>
