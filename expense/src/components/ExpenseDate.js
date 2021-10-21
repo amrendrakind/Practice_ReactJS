@@ -5,7 +5,7 @@ function ExpenseDate(props) {
     const day = props.date.toLocaleString('en-US', { month: '2-digit' })
 
     return (
-        <div className="expense-date">
+        <div className = "expense-date">
             <div>{month}</div>
             <div>{year}</div>
             <div>{day}</div>
