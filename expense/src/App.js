@@ -1,4 +1,3 @@
-import reactDom   from 'react-dom';
 import './App.css';
 import Expenses from './components/Expenses/Expenses';
 
