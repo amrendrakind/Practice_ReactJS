@@ -28,7 +28,6 @@ export default class FilesUploadComponent extends Component {
         })
     }
 
-
     render() {
         return (
             <div className="container">

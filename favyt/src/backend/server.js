@@ -1,3 +1,5 @@
+const dotenv = require('dotenv')
+dotenv.config()
 let express = require('express'),
     mongoose = require('mongoose'),
     cors = require('cors'),
@@ -5,18 +7,20 @@ let express = require('express'),
     dbConfig = require('./database/db');
 
 const api = require('../backend/routes/user.routes')
-
+const Connct_Mongo_DB = require('./dbConfig')
+Connct_Mongo_DB()
 // MongoDB Configuration
-mongoose.Promise = global.Promise;
-mongoose.connect(dbConfig.db, {
-    useNewUrlParser: true
-}).then(() => {
-    console.log('Database sucessfully connected')
-},
-    error => {
-        console.log('Database could not be connected: ' + error)
-    }
-)
+//mongoose.Promise = global.Promise;
+
+// mongoose.connect(dbConfig.db, {
+//     useNewUrlParser: true,
+// }).then(() => {
+//     console.log('Database sucessfully connected')
+// },
+//     error => {
+//         console.log('Database could not be connected: ' + error)
+//     }
+// )
 
 const app = express();
 app.use(bodyParser.json());
