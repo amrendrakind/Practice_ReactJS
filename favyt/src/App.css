@@ -10,7 +10,7 @@ body {
 
 /* Header/logo Title */
 .header {
-  padding: 80px;
+  padding: 05px;
   text-align: center;
   background: #269faf;
   color: white;
@@ -82,7 +82,7 @@ body {
 
 /* Footer */
 .footer {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   background: #ddd;
 }
